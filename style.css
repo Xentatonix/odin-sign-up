@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("fonts/Norse-Bold.otf");
+} 
+
 * {
     padding: 0;
     margin: 0;
@@ -5,6 +10,43 @@
     box-sizing: border-box;
 }
 
-div {
-    border: 1px solid black;
+body {
+    display: flex;
+}
+
+.sidebar {
+    background-image: url("images/unsplash-leaf.jpeg");
+    height: 100vh;
+    width: 35vw;
+
+    background-position-x: center;
+    background-size: cover;
+}
+
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+}
+
+.banner img {
+    width: 7vw;
+    height: auto;
+}
+
+.title {
+    font-size: 4vw;
+    font-family:'Norse-Bold', Courier, monospace;
+
+    color: aliceblue;
+    align-self: center;
+}
+
+.main {
+    background-color: aliceblue;
 }
